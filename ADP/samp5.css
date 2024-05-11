@@ -1,0 +1,288 @@
+body{
+    margin-left:50px;
+    
+   
+}
+
+#navbar{
+    background:lightgrey;
+    width:100%;
+    height:50px;
+
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    float:right;
+}
+
+.Red{
+    font-weight: bold;
+    color:orangered;
+    float:left;
+    padding-top:10px;
+    padding-left:20px;
+    font-size: x-large;
+    list-style-type: none;
+   
+}
+
+li{
+    padding-right:40px;
+}
+
+#header{
+    width:100%;
+    color:white;
+    background: black;
+    
+    padding-top:20px;
+    height:150px;
+}
+
+#Content{
+    width:100%;
+    height:200px;
+    background-color: rgb(235, 234, 234);
+    padding-top:100px;
+   
+}
+
+.h1{
+    padding-left:300px;
+    font-size:30px;
+   
+    
+}
+.p1{
+    padding-left:300px;
+   font-size:12px;
+    
+}
+
+.Line1{
+    
+    text-align:center;
+    
+}
+
+.Line2{
+    padding-left:475px;
+    line-height: 0.5px;
+}
+
+
+#Picture{
+    width:97.3%;
+    padding:20px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    position:relative;
+}
+
+.Ach{
+    text-align: center;
+}
+.Sub{
+    text-align: center;
+    font-size:16px;
+   line-height: 0.5px;
+    
+    
+    
+}
+
+
+#Boxes{
+    width:97.3%;
+    padding:20px;
+    background-color: black;
+    color: white;
+    height: 300px;
+    display: flex;
+    
+}
+.Box1{
+    margin-top:60px;
+     width:200px;
+    height:200px;
+    background-color:white;
+    flex-direction: row;
+    margin-left:210px;
+    border-radius: 10px;
+   
+
+}
+
+.Box1h{
+    color:black;
+    font-weight: bold;
+    font-size:12px;
+    text-align: center;
+}
+
+.Box1p{
+    color:black;
+    font-weight: bold;
+    font-size:12px;
+    text-align: center;
+}
+
+.bar{
+    color:white;
+}
+.i1{
+    width:100px; 
+    height:100px;
+    margin-left:50px;
+    margin-top:15px;
+    border-radius: 50%;
+}
+.Border{
+    margin-left:500px;
+   
+}
+
+#Picture1{
+    width:97.3%;
+    padding:20px;
+    background-color: black;
+    color: white;
+    height: 30px;
+   margin-top:100px;
+}
+
+#Skills{
+    width:100%;
+    height:400px;
+    padding-top:20px;
+    display: flex;
+    
+}
+
+.TS{
+    margin-top:20px;
+}
+.LS{
+    margin-top:20px;
+}
+.ts{
+    margin-left:300px;
+}
+.ts1h{
+    margin-left:200px;
+}
+.ts1{
+    background: rgb(207, 55, 8);
+    width:320px;
+    height:6px;
+    margin-left:200px;
+}
+
+.ts2{
+    background: rgb(207, 55, 8);
+    width:290px;
+    height:6px;
+    margin-left:200px;
+
+}
+
+.ts3{
+    background: rgb(207, 55, 8);
+    width:265px;
+    height:6px;
+    margin-left:200px;
+
+}
+
+.ts4{
+    background: rgb(207, 55, 8);
+    width:340px;
+    height:6px;
+    margin-left:200px;
+
+}
+
+.ts5{
+    background: rgb(207, 55, 8);
+    width:335px;
+    height:6px;
+    margin-left:200px;
+
+}
+
+.ls{
+    margin-left:400px;
+}
+.ls1h{
+    margin-left:300px;
+}
+
+.ls1{
+    background: rgb(207, 55, 8);
+    width:350px;
+    height:6px;
+    margin-left:300px;
+
+}
+
+.ls2{
+    background: rgb(207, 55, 8);
+    width:300px;
+    height:6px;
+    margin-left:300px;
+
+}
+
+.ls3{
+    background: rgb(207, 55, 8);
+    width:270px;
+    height:6px;
+    margin-left:300px;
+
+}
+
+.ls4{
+    background: rgb(207, 55, 8);
+    width:290px;
+    height:6px;
+    margin-left:300px;
+
+}
+
+.ls5{
+    background: rgb(207, 55, 8);
+    width:220px;
+    height:6px;
+    margin-left:300px;
+
+}
+
+
+
+.Sk{
+    width:100%;
+    margin-left:670px;
+}
+
+.Cp1{
+    text-align: center;
+    color:white;
+    padding-top:30px;
+}
+
+#Contact{
+    
+    width:100%;
+    height: 320px;
+    background: black;
+}
+
+input{
+    margin-left:590px;
+    margin-top:30px;
+    width: 300px;
+    height:25px;
+}

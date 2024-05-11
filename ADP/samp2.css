@@ -1,0 +1,41 @@
+body{
+    background-color: lightgrey;
+    padding: 10px;
+}
+#titleimage{
+    position:relative;
+    width: 100%;
+}
+#titleName{
+    position:absolute;
+    left:45%;
+    top:45%;
+    font: size 60px;
+}
+#title{
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+.pizza{
+    background-color: orange;
+    color:white;
+    text-align: center;
+}
+#favFoodimage{
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    width: 80%;
+}
+.friedchicken{
+    background-color: purple;
+    text-align: center;
+    color:white;
+}
+.salad{
+    background-color:lightskyblue;
+    text-align: center;
+    color:white;
+}

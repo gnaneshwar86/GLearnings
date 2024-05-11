@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(16, 16, 116);
+    padding:20px;
+}
+
+
+
+#nav a{
+    color:white;
+    font-size:18px;
+    text-decoration: none;
+    margin-left:40px;
+}
+
+#Inav{
+    margin-top:30px;
+    margin-left:50px;
+}
+
+#Inav a{
+    text-decoration: none;
+    color:black;
+    margin-left:30px;
+}
+
+#Image{
+
+    background-image: url("https://www.annauniv.edu/images/main-slider/slide1.jpeg");
+    height:500px;
+    background-size: cover;
+}
+
+#Box{
+    background: rgb(21,198,226);
+    background: linear-gradient(0deg, rgba(21,198,226,1) 15%, rgba(221,16,155,1) 70%);
+    width:100px;
+    height:200px;
+    border-radius: 10px;
+    margin-top:60px;
+    padding-top:20px;
+    display: inline-block;
+
+}
+
+#Box p{
+    text-align: center;
+    color: white;
+    font-weight:bold;
+}
+
+#Social{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#buttons{
+    margin-top:90px;
+    display: flex;
+    justify-content: center;
+}
+#left{
+    width:30px;
+    height: 30px;
+    background-color: rgb(137, 3, 99);
+    border-radius:30px;
+    padding:10px;
+    color:white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-left:20px;
+    text-align: center;
+
+}
+
+#right{
+    width:30px;
+    height: 30px;
+    background-color: rgb(137, 3, 99);
+    border-radius:30px;
+    padding:10px;
+    color:white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
