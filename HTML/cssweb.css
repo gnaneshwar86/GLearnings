@@ -1,0 +1,87 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.li{
+    list-style-type:none;
+    display:inline-block;
+    text-align:left;
+}
+.list{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+#Home1{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.head{
+    text-align: right;
+    background-color:lightgray;
+    font-size: 20px;
+    
+}
+.title{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 47%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.logo{
+    display: inline-block;
+}
+.tit{
+    text-align: center;
+    font-size: 30px;
+}
+.skills{
+    display: inline-block;
+    background-color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 300px;
+    padding: 40px;
+}
+.tech{
+    font-size: 16px;
+}
+.stack{
+    font-size: 18px;
+}
+.achieve{
+    text-align: center;
+    display: inline-block;
+}
+.box1{
+    background-color:dimgray;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: whitesmoke;
+}
+.box2{
+    background-color:dimgray;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: whitesmoke;
+}
+.box3{
+    background-color:dimgray;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    color: whitesmoke;
+    
+}
+.list:hover{
+    background-color: skyblue;
+}
+#Home1:hover{
+    background-color: gray;
+}
+
+  
+
