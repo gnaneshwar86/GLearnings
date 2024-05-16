@@ -1,0 +1,38 @@
+#store-header{
+    background-color: lightgrey;
+    padding: 10px;
+}
+.product-category{
+    display: inline-block;
+    list-style-type: none;
+    overflow:hidden;
+    padding: 10px;
+
+}
+.product{
+    padding: 10px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+}
+.special-offer{
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+}
+.foot{
+    text-align: center;
+}
+.product:hover{
+    background-color: yellow;
+}
+.special-offer:hover{
+    background-color: yellow;
+}
+.product-category:hover{
+    background-color: yellow;
+}
