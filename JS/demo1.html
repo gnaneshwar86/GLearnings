@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+        <form>
+        <input type="text" id="t1" placeholder="Name"><br>
+        <input type="radio" id="t3" value="AMAR">AMAR<br>
+        <input type="radio" id="t3" value="ASWIN">ASWIN<br>
+        <input type="radio" id="t3" value="AKASH">AKASH<br>
+        <input type="submit" id="t2" value="SUBMIT" onclick="out()">
+        <script>
+            function out() {
+                let val = document.getElementById("t1").value;
+                let val2 = document.getElementById("t3").value;
+                document.write(val);
+                document.write(val2);
+            }
+            console.log(val);
+        </script>
+        </form>
+    </body>
+</html>
