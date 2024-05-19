@@ -1,0 +1,21 @@
+.chess{
+    border-color: gray;
+    height:640px;
+    width:640px;
+    border-style: solid;
+    color: silver;
+    font-size: 50px;
+    text-align: center;
+}
+.white{
+    float: left;
+    background-color: white;
+    height:80px;
+    width:80px;
+}
+.black{
+    float:left;
+    background-color: black;
+    height:80px;
+    width:80px;
+}
