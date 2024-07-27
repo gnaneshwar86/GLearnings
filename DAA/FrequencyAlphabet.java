@@ -1,6 +1,6 @@
 // You are using Java
 import java.util.*;
-public class Main{
+public class FrequencyAlphabet{
     public static void main(String args[]){
         Scanner in=new Scanner(System.in);
         String s=in.nextLine();

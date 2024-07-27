@@ -1,6 +1,6 @@
 // You are using Java
 import java.util.*;
-public class Main{
+public class ArraySwapValues{
     public static void main(String[]args){
         Scanner in=new Scanner(System.in);
         int n=in.nextInt();
