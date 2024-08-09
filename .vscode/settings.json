@@ -1,4 +1,5 @@
 {
     "editor.acceptSuggestionOnEnter": "on",
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "tabnine.codeLensEnabled": false
 }
