@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Counting from './Counting';
 import StateManip from './StateManip';
+import TwoWayBinding from './TwoWayBinding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateManip />
+    <TwoWayBinding />
   </React.StrictMode>
 );
 
