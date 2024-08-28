@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {Box,TextField,Button, ButtonGroup} from '@mui/material'
+import {Box,TextField,Button} from '@mui/material'
 import '../App.css'
 import logo from '../assets/GKdp.png'
-function Login() {
+function SignUp() {
   let [email,setEmail] = useState('');
   let [password,setPassword] = useState('');
-  let [errors,setErrors] =useState({email:'',password:''});
+  let [cpassword,setCPassword] = useState('');
+  let [phone,setPhone] = useState('');
+  let [errors,setErrors] =useState({email:'',password:'',cpassword:'',phone:''});
   let [userData,setUserData] = useState([]);
   const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const navigate = useNavigate();
-  const goToHomePage = () =>{
-    navigate("/Home"); 
-  }
-  const goToSignUpPage = () =>{
-    navigate("/signup"); 
+  const goToLoginPage = () =>{
+    navigate("/"); 
   }
 
   const handleSubmit = (e) =>{
     let valid = true;
-    const newErrors = {email:'',password:''};
+    const newErrors = {email:'',password:'',cpassword:'',phone:''};
 
     if(!regex.test(email)){
       newErrors.email="Invalid email address";
@@ -32,14 +31,29 @@ function Login() {
       valid = false;
     }
 
+    if(cpassword!==password){
+      newErrors.cpassword="Passwords do not match";
+      valid = false;
+    }
+
+    if(phone.length!==10){
+      newErrors.phone="Phone number not valid";
+      valid = false;
+    }
+
     if(valid){
-      setUserData([...userData,{email,password}]);
+      setUserData([...userData,{email,password,cpassword,phone}]);
       setEmail='';
       setPassword='';
+      setCPassword='';
+      setPhone='';
       newErrors.email='';
       newErrors.password='';
+      newErrors.cpassword='';
+      newErrors.phone='';
       setErrors(newErrors);
-      goToHomePage();
+      alert("User created successfully");
+      goToLoginPage();
     }
     else{
       setErrors(newErrors);
@@ -57,9 +71,9 @@ function Login() {
           bgcolor: 'white',
           mr:'15vh',
         }}>
-        <h1 className='login'>Login</h1>
+        <h1 className='signup'>Sign Up</h1>
         <TextField required className='email' label="Email" type='email' variant="outlined" margin='normal' 
-        sx={{marginBottom:'40px',width:'50vh'}}
+        sx={{marginBottom:'0px',width:'50vh'}}
         value={email}
         onChange={(e)=>{setEmail(e.target.value)}}
         error={!!errors.email}
@@ -67,18 +81,30 @@ function Login() {
         />
 
         <TextField required className='password' label="Password" type='password' variant="outlined" margin='normal' 
-        sx={{marginBottom:'20px',width:'50vh'}}
+        sx={{marginBottom:'0px',width:'50vh'}}
         value={password}
         onChange={(e)=>{setPassword(e.target.value)}}
         error={!!errors.password}
         helperText={errors.password}
         />
-        <ButtonGroup className='up' variant="text" aria-label="Basic button group">
-        <Button className='forgot' variant="text" color='primary' margin='normal' size='small' >Forgot Password?</Button>
-        <Button className='signup' onClick={goToSignUpPage} variant="text" color='primary' margin='normal' size='small' sx={{fontWeight:'bold'}}>Sign Up</Button>
-        </ButtonGroup>
+        
+        <TextField required className='cpassword' label="Confirm Password" type='password' variant="outlined" margin='normal' 
+        sx={{marginBottom:'0px',width:'50vh'}}
+        value={cpassword}
+        onChange={(e)=>{setCPassword(e.target.value)}}
+        error={!!errors.cpassword}
+        helperText={errors.cpassword}
+        />
+        
+        <TextField required className='phone' label="Phone (+91)" type='number' variant="outlined" margin='normal' 
+        sx={{marginBottom:'20px',width:'50vh'}}
+        value={phone}
+        onChange={(e)=>{setPhone(e.target.value)}}
+        error={!!errors.phone}
+        helperText={errors.phone}
+        />
 
-        <Button className='submit' onClick={handleSubmit} variant="contained" margin='normal' >Sign In</Button>
+        <Button className='submit' onClick={handleSubmit} variant="contained" margin='normal' >Sign Up</Button>
 
         {/* <Box mt={4}>
         <h6>Stored User Data:</h6>
@@ -86,9 +112,8 @@ function Login() {
         </Box> */}
 
         </Box>
-
     </div>
   )
 }
 
-export default Login;
+export default SignUp;
