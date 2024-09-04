@@ -1,4 +1,5 @@
 // You are using Java
+package Constructor;
 import java.util.*;
 class StallCategory{
     StallCategory(){
