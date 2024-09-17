@@ -1,3 +1,4 @@
+// Time Complexity : O(nlogn)
 #include<bits/stdc++.h>
 using namespace std;
 void merge(int leftArr[],int leftLength,int rightArr[],int rightLength,int arr[]){

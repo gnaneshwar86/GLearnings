@@ -1,18 +1,22 @@
+// Time Complexity : 
 #include<iostream>
 using namespace std;
 int partition(int arr[],int start,int end){
     int i = start-1 ;
     int pivot =  arr[end];
-    for(int j=start; j<=end; j++){
+    for(int j=start; j<end; j++){
         if(arr[j] < pivot){
-            swap(arr[++i],arr[j]);
+            i++;
+            swap(arr[i],arr[j]);
         }
     }
-    swap(arr[++i],arr[end]);
+    i++;
+    swap(arr[i],arr[end]);
     return i;
 }
 void quickSort(int arr[],int start,int end){
-    if(end <= start)return;
+    if(end <= start)
+    return;
     int pivotIndex = partition(arr, start, end);
     quickSort(arr,start,pivotIndex-1);
     quickSort(arr,pivotIndex+1,end);
